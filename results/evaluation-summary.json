@@ -1,0 +1,95 @@
+{
+  "simulation_engine": "MuJoCo 3.6.0",
+  "full_maze": {
+    "completed_trials": 3,
+    "passed": 3,
+    "median_arrival_s": 208.50000000000003,
+    "physics": "3.6.0",
+    "controller": "RecoveringCenterPilot",
+    "map_sha256": "b5299a12cd2b2b3e0944e071fdadddee1c38ddd71d130007b7864b376069535c",
+    "cases": [
+      {
+        "seed": 105391,
+        "full_pass": true,
+        "arrival_s": 208.50000000000003,
+        "goal_reached": true,
+        "fell": false,
+        "collision": false,
+        "slopes_passed_deg": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "dance_seconds": 10.0,
+        "post_dance_hold_s": 2.0
+      },
+      {
+        "seed": 105392,
+        "full_pass": true,
+        "arrival_s": 213.88000000000002,
+        "goal_reached": true,
+        "fell": false,
+        "collision": false,
+        "slopes_passed_deg": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "dance_seconds": 10.0,
+        "post_dance_hold_s": 2.0
+      },
+      {
+        "seed": 105393,
+        "full_pass": true,
+        "arrival_s": 207.84,
+        "goal_reached": true,
+        "fell": false,
+        "collision": false,
+        "slopes_passed_deg": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "dance_seconds": 10.0,
+        "post_dance_hold_s": 2.0
+      }
+    ]
+  },
+  "fixed_slope_benchmark": {
+    "angle_deg": 10,
+    "trials": 100,
+    "passed": 100,
+    "falls": 0,
+    "collisions": 0,
+    "execution_errors": 0,
+    "finish_crossings": 100,
+    "dance_and_hold_passes": 100,
+    "median_finish_crossing_s": 49.940000000000005,
+    "median_stop_s": 52.46,
+    "min_crest_stable_s": 0.5,
+    "min_post_dance_hold_s": 2.0,
+    "holdout_scope": "Native simulation with fixed 10-degree geometry and friction and independent randomized starts",
+    "seed_range": [
+      107000,
+      107099
+    ]
+  },
+  "full_maze_video": {
+    "seed": 105391,
+    "speed": 1,
+    "duration_s": 220.56,
+    "fps": 25,
+    "frames": 5514,
+    "file": "docs/assets/miniduck-maze-recovery-1x.mp4",
+    "sha256": "44fb132c0bb009ed116b799bca9d553ac881931c5893793e6c86913dbf9c627c"
+  }
+}

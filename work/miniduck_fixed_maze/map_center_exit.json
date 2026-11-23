@@ -1,0 +1,41 @@
+{
+  "map_id": "miniduck_center_exit_slopes_5_to_10_v5",
+  "units": "metres",
+  "enclosure": {"x": [-4.75, 4.75], "y": [-2.2, 2.2]},
+  "start_xy_yaw": [0, 0, 0],
+  "goal_xy": [-5.24, 1.48],
+  "goal_radius": 0.10,
+  "exit": {"x": -4.75, "y_bounds": [0.78, 2.20], "direction": -1},
+  "wall_height": 0.40,
+  "walls": [
+    {"name": "wall_left", "x_bounds": [-4.81, 4.81], "y_bounds": [2.20, 2.27]},
+    {"name": "wall_right", "x_bounds": [-4.81, 4.81], "y_bounds": [-2.27, -2.20]},
+    {"name": "east_wall", "x_bounds": [4.75, 4.82], "y_bounds": [-2.20, 2.20]},
+    {"name": "west_wall", "x_bounds": [-4.82, -4.75], "y_bounds": [-2.20, 0.78]},
+    {"name": "fold", "x_bounds": [-4.75, 3.57], "y_bounds": [0.67, 0.78]},
+    {"name": "west_dead_end", "x_bounds": [-1.24, -1.15], "y_bounds": [-2.20, 0.67]},
+    {"name": "center_barrier", "x_bounds": [0.46, 0.58], "y_bounds": [-0.28, 0.67]},
+    {"name": "south_barrier", "x_bounds": [0.95, 1.72], "y_bounds": [-2.20, -1.35]},
+    {"name": "lower_baffle", "x_bounds": [-1.15, -0.71], "y_bounds": [-0.85, -0.72]},
+    {"name": "exit_rail_lower", "x_bounds": [-5.91, -4.75], "y_bounds": [0.71, 0.78]},
+    {"name": "exit_rail_upper", "x_bounds": [-5.91, -4.75], "y_bounds": [2.20, 2.27]}
+  ],
+  "terrain": {
+    "planar_ramps": true,
+    "x_bounds": [-6.2, 5.10],
+    "y_bounds": [-2.50, 2.50],
+    "x_height": [[-6.2, 0], [5.10, 0]],
+    "roughness_amplitude_m": 0,
+    "roughness_wavelength_m": [0.78, 0.90],
+    "roughness_x_range": [-1, 1],
+    "grade_bands": [
+      {"degrees": 5, "start_x": 1.13, "direction": 1, "ascent": 0.48, "crest": 0.20, "descent": 0.48, "y_bounds": [-2.20, 0.73]},
+      {"degrees": 6, "start_x": 2.40, "direction": 1, "ascent": 0.48, "crest": 0.20, "descent": 0.48, "y_bounds": [-2.20, 0.73]},
+      {"degrees": 7, "start_x": 3.31, "direction": -1, "ascent": 0.62, "crest": 0.24, "descent": 0.62, "y_bounds": [0.73, 2.20]},
+      {"degrees": 8, "start_x": 1.57, "direction": -1, "ascent": 0.62, "crest": 0.24, "descent": 0.62, "y_bounds": [0.73, 2.20]},
+      {"degrees": 9, "start_x": -0.17, "direction": -1, "ascent": 0.62, "crest": 0.24, "descent": 0.62, "y_bounds": [0.73, 2.20]},
+      {"degrees": 10, "start_x": -1.91, "direction": -1, "ascent": 0.62, "crest": 0.24, "descent": 0.62, "y_bounds": [0.73, 2.20]}
+    ]
+  },
+  "dance_seconds": 10.0
+}

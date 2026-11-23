@@ -1,0 +1,51 @@
+{
+  "description": "20.48M probe: progress-along-command + gait guidance (3 evals)",
+  "ppo": {
+    "num_timesteps": 20480000,
+    "num_evals": 3,
+    "num_envs": 512,
+    "num_eval_envs": 16,
+    "num_resets_per_eval": 0,
+    "episode_length": 1000,
+    "action_repeat": 1,
+    "unroll_length": 40,
+    "batch_size": 128,
+    "num_minibatches": 4,
+    "num_updates_per_batch": 2,
+    "discounting": 0.99,
+    "learning_rate": 0.0003,
+    "learning_rate_schedule": "ADAPTIVE_KL",
+    "learning_rate_schedule_min_lr": 1e-05,
+    "learning_rate_schedule_max_lr": 0.0005,
+    "desired_kl": 0.005,
+    "clipping_epsilon": 0.1,
+    "entropy_cost": 0.005,
+    "max_grad_norm": 1.0,
+    "reward_scaling": 1.0,
+    "normalize_observations": true,
+    "deterministic_eval": true,
+    "seed": 20261028,
+    "log_training_metrics": true,
+    "training_metrics_steps": 163840
+  },
+  "network": {
+    "policy_hidden_layer_sizes": [
+      512,
+      256,
+      128
+    ],
+    "value_hidden_layer_sizes": [
+      512,
+      256,
+      128
+    ],
+    "policy_obs_key": "state",
+    "value_obs_key": "privileged_state",
+    "distribution_type": "tanh_normal",
+    "noise_std_type": "scalar",
+    "init_noise_std": 1.0,
+    "state_dependent_std": false,
+    "mean_clip_scale": null,
+    "use_distributional_critic": false
+  }
+}

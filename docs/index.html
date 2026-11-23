@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101c24">
+    <meta name="description" content="MiniDuck 双足机器人从零训练与部署仿真。观看完整迷宫录像，查看坡道和迷宫评测结果。">
+    <title>MiniDuck 从零训练与部署仿真</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./site.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要内容</a>
+    <header class="masthead">
+      <div class="wrap masthead-inner">
+        <a class="brand" href="#main">MiniDuck</a>
+        <nav aria-label="项目导航">
+          <a href="#demo">完整录像</a>
+          <a href="#results">评测结果</a>
+          <a href="https://github.com/3535348582-prog/miniduck-simulation">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap" id="main" tabindex="-1">
+      <header class="intro">
+        <div>
+          <h1>MiniDuck <span>从零训练与部署仿真</span></h1>
+        </div>
+        <div class="intro-copy">
+          <p>从 PPO 步态训练出发，在 MuJoCo 3.6 中测试双足机器鸭的坡道配速、姿态恢复和封闭迷宫导航。</p>
+          <div class="actions">
+            <a class="button" href="#demo">观看完整录像</a>
+            <a class="source-link" href="https://github.com/3535348582-prog/miniduck-simulation">查看项目源码</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="run-record">
+        <section id="demo" aria-labelledby="demo-title">
+          <figure class="recording">
+            <div class="recording-header">
+              <h2 id="demo-title">封闭迷宫完整录像</h2>
+              <span>1 倍速 <span aria-hidden="true">/</span> 3 分 40.56 秒</span>
+            </div>
+            <video controls playsinline preload="metadata" aria-labelledby="demo-title" aria-describedby="demo-caption">
+              <source src="./assets/miniduck-maze-recovery-1x.mp4" type="video/mp4">
+              <a href="./assets/miniduck-maze-recovery-1x.mp4">打开完整 MP4 录像</a>
+            </video>
+            <figcaption id="demo-caption">
+              机器鸭从迷宫中心出发，走完 5°–10° 的六段坡，在出口停稳并完成 10 秒庆祝。
+              <a href="./assets/miniduck-maze-recovery-1x.mp4">打开原始录像</a>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section id="results" class="results" aria-labelledby="results-title">
+          <h2 id="results-title">仿真评测</h2>
+          <dl>
+            <div>
+              <dt>10° 上下坡通过</dt>
+              <dd>100<span>/100</span></dd>
+              <dd class="detail">0 摔倒，0 碰撞</dd>
+            </div>
+            <div>
+              <dt>封闭迷宫通过</dt>
+              <dd>3<span>/3</span></dd>
+              <dd class="detail">5°–10° 六段坡</dd>
+            </div>
+            <div>
+              <dt>10° 坡道终点停稳</dt>
+              <dd>52.46<span> 秒</span></dd>
+              <dd class="detail">100 个成功试次的中位用时</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+
+      <section class="criteria" aria-labelledby="criteria-title">
+        <h2 id="criteria-title">通过条件</h2>
+        <div>
+          <h3>10° 独立坡道</h3>
+          <p>通过上坡、坡顶停稳、下坡和回到平地的检查，过线后停稳，完成 10 秒庆祝并在舞后继续稳站。</p>
+        </div>
+        <div>
+          <h3>封闭迷宫</h3>
+          <p>从中心出发，依次完成六段坡道并抵达出口，停稳后完成庆祝与舞后稳站。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap footer">
+      <p>机器人学课程小组项目。感谢小组成员共同完成训练、仿真与评测。</p>
+      <a href="https://github.com/3535348582-prog/miniduck-simulation">项目仓库</a>
+    </footer>
+  </body>
+</html>
